@@ -20,6 +20,24 @@ body {
   position: relative;
   overflow: hidden;
 }
+.earth p {
+  font: 22px bold;
+  font-family: "Microsoft YaHei","黑体","宋体",sans-serif;
+  color: white;
+  margin: 2px auto;
+}
+.bless {
+  width: 300px;
+  animation: bless-up 20s linear;
+}
+@keyframes bless-up {
+  0% {
+    margin-top: 500px;
+  }
+  100% {
+    margin-top: -500px;
+  }
+}
 .sky {
   width: 100%;
   height: 54.5%;
@@ -47,7 +65,6 @@ body {
   box-shadow:0 0 80px 30px rgba(238, 209, 232, .6);
   animation: moonlight 10s;
 }
-/* #D7BDD5 */
 @keyframes moonlight {
   0% {
     box-shadow:0 0 40px 20px rgba(238, 209, 232, .2);
