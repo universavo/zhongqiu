@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+}
+html {
+  width: 100%;
+  height: 100%;
+
+}
+body {
+  width: 100%;
+  height: 100%;
+  background: url(./src/assets/bg.png);
+  overflow: hidden;
+  -webkit-mask: center no-repeat rgba(255, 255, 255, 0.5);
+}
+
+.earth {
+  width: 100%;
+  height: 45.5%;
+  position: relative;
+  overflow: hidden;
+}
+.sky {
+  width: 100%;
+  height: 54.5%;
+  position: relative;
+  overflow: hidden;
+}
+.moon {
+  background: #dddddd url(./src/assets/moon.png);
+  width: 350px;
+  height: 350px;
+  border-radius: 175px;
+  animation: moonRise cubic-bezier(0.61, 0.18, 0.49, 1.05) 10s;
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.moon:after{
+  position:absolute;
+  content:'';
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  border-radius:50%;
+  box-shadow:0 0 80px 30px rgba(238, 209, 232, .6);
+  animation: moonlight 10s;
+}
+/* #D7BDD5 */
+@keyframes moonlight {
+  0% {
+    box-shadow:0 0 40px 20px rgba(238, 209, 232, .2);
+  }
+  50% {
+    box-shadow:0 0 60px 25px rgba(238, 209, 232, .4);
+  }
+  100% {
+    box-shadow:0 0 80px 30px rgba(238, 209, 232, .6);
+  }
+}
+@keyframes moonRise {
+  0%   {margin-top: 80%;margin-left: 10px;}
+  100% {margin-top: 30px;margin-left: 30px;}
+}
