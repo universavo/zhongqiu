@@ -1,0 +1,32 @@
+{
+  "name": "zhongqiu",
+  "version": "0.0.1",
+  "description": "zhongqiu bless",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bsstart": "browser-sync start --config bs-config.js",
+    "watch": "grunt watch",
+    "dist": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/universavo/zhongqiu.git"
+  },
+  "keywords": [
+    "zhongqiu"
+  ],
+  "author": "universavo & aq",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/universavo/zhongqiu/issues"
+  },
+  "homepage": "https://github.com/universavo/zhongqiu#readme",
+  "devDependencies": {
+    "browser-sync": "^2.15.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

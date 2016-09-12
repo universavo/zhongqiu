@@ -1,5 +1,8 @@
-# psd
-src/assets/psd*
-
 # node
 node_modules
+
+# log
+npm-debug.log*
+
+# psd
+*.psd
