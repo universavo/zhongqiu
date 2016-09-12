@@ -23,7 +23,7 @@ module.exports = function(grunt) {
     },
   });
 
-  grunt.event.on('watch', function(action, filepath, target) {
+  grunt.event.on('watch', function(action, filepath) {
     grunt.config('copy.dist.src', filepath.substr(4));
     grunt.config('clean.dist.src', filepath.substr(4));
   });
