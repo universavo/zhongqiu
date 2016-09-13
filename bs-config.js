@@ -5,7 +5,7 @@ module.exports = {
         port: 9090
       },
     },
-    "files": ["dist/**/*"],
+    "files": ["dist/src/**/*", "dist/index.html", "dist/style.css"],
     "server": {
       baseDir: "dist",
       index: "index.html"
