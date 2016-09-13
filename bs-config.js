@@ -5,9 +5,9 @@ module.exports = {
         port: 9090
       },
     },
-    "files": ["app/index.html", "app/style.css", "app/src/**/*"],
+    "files": ["dist/**/*"],
     "server": {
-      baseDir: "app",
+      baseDir: "dist",
       index: "index.html"
     },
 };

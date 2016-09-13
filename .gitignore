@@ -6,3 +6,6 @@ npm-debug.log*
 
 # psd
 *.psd
+
+# dist
+dist
