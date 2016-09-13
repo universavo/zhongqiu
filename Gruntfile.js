@@ -3,7 +3,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     clean: {
       dist: {
-        src: ['src/**/*', 'index.html', 'style.css'],
+        src: ['dist/src/**/*', "dist/index.html", "dist/style.css"],
       },
     },
     copy: {
@@ -11,7 +11,7 @@ module.exports = function(grunt) {
         expand: true,
         cwd: 'app',
         src: '**/*',
-        dest: '',
+        dest: 'dist',
       },
     },
     watch: {
@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 
   grunt.event.on('watch', function(action, filepath) {
     grunt.config('copy.dist.src', filepath.substr(4));
-    grunt.config('clean.dist.src', filepath.substr(4));
+    grunt.config('clean.dist.src', 'dist/' + filepath.substr(4));
   });
 
   grunt.registerTask('default', [
