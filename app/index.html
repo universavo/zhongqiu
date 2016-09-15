@@ -4,10 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <link rel="stylesheet" href="./style.css">
-  <title>zhongqiu</title>
+  <title>蓝蓝祝您中秋快乐！</title>
 </head>
 <body>
-  <audio id="audio-1" src="./src/audio/1.mp3" autoplay preload></audio>
+  <audio id="audio-1" src="./src/audio/1.mp3" preload></audio>
+  <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+  <script>
+    document.getElementById('audio-1').play();
+    document.addEventListener("WeixinJSBridgeReady", function () {
+      document.getElementById('audio-1').play();
+      document.getElementById('video').play();
+    }, false);
+  </script>
   <div class="home">
     <div class="sky">
       <div class="moon">
@@ -23,7 +31,7 @@
           <img class="img-1" src="./src/assets/wx.png" alt="王欣祝您\n中秋节快乐" />
           <img class="img-2" src="./src/assets/yb.png" alt="月饼吃不完" />
         </div>
-        <div class="top-bless top-bless-1"><p>王欣祝您</p><p>中秋节快乐</p></div>
+        <div class="top-bless top-bless-1"><p><span style="color:blue;font-size:1.1em;">蓝蓝</span>祝您</p><p>中秋节快乐</p></div>
         <div class="top-bless top-bless-2">香甜的月饼吃不完!</div>
       </div>
     </div>
@@ -39,7 +47,7 @@
         <p>美好的祝福，</p>
         <p>美好的心，</p>
         <p>美好情意滋润您！</p>
-        <p>王欣祝您中秋节快乐！</p>
+        <p>蓝蓝祝您中秋节快乐！</p>
         <div class="bless-footer"></div>
       </div>
     </div>
